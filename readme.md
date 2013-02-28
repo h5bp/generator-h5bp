@@ -10,6 +10,11 @@ Scaffolds out [HTML5 Boilerplate](http://html5boilerplate.com)
 - Run: `yo h5bp`
 
 
+## Related
+
+You might also find the [Mobile Boilerplate](https://github.com/sindresorhus/generator-mobile-boilerplate) and [Server Configs](https://github.com/sindresorhus/generator-server-configs) generators useful.
+
+
 ## License
 
 [MIT License](http://en.wikipedia.org/wiki/MIT_License)
