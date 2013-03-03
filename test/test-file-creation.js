@@ -4,8 +4,8 @@ var path = require('path');
 var helpers = require('yeoman-generator').test;
 
 describe('H5BP generator', function () {
-	beforeEach(function(cb) {
-		var deps = ['../../app', [helpers.createDummyGenerator(), 'h5bp:app']];
+	beforeEach(function (cb) {
+		var deps = ['../../app'];
 
 		helpers.testDirectory(path.join(__dirname, 'temp'), function (err) {
 			if (err) {
@@ -22,11 +22,8 @@ describe('H5BP generator', function () {
 
 		helpers.mockPrompt(this.h5bp, { docs: 'y' });
 
-		this.h5bp.sourceRoot(path.join(__dirname, 'temp'));
-
 		this.h5bp.run({}, function () {
-			// TODO: figure out why this doesn't work
-			//helpers.assertFiles(expected);
+			helpers.assertFiles(expected);
 			cb();
 		});
 	});
