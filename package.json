@@ -1,6 +1,6 @@
 {
   "name": "generator-h5bp",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "HTML5 Boilerplate generator",
   "keywords": [
     "yeoman-generator",
@@ -8,8 +8,8 @@
     "boilerplate",
     "template"
   ],
-  "homepage": "https://github.com/sindresorhus/generator-h5bp",
-  "bugs": "https://github.com/sindresorhus/generator-h5bp/issues",
+  "homepage": "https://github.com/h5bp/generator-h5bp",
+  "bugs": "https://github.com/h5bp/generator-h5bp/issues",
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
@@ -18,7 +18,7 @@
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/sindresorhus/generator-h5bp.git"
+    "url": "git://github.com/h5bp/generator-h5bp.git"
   },
   "scripts": {
     "test": "mocha test/test-*.js"
