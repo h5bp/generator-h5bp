@@ -17,5 +17,4 @@ You might also find the [Mobile Boilerplate](https://github.com/h5bp/generator-m
 
 ## License
 
-[MIT License](http://en.wikipedia.org/wiki/MIT_License)
-(c) [Sindre Sorhus](http://sindresorhus.com)
+MIT License • © [Sindre Sorhus](http://sindresorhus.com)
