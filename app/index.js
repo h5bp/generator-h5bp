@@ -11,15 +11,11 @@ var Generator = module.exports = function () {
 	];
 
 	this.prompt([{
+		type: 'confirm',
 		name: 'docs',
-		message: 'Would you like docs included?',
-		default: 'y/N'
-	}], function (err, props) {
-		if (err) {
-			return this.emit('error', err);
-		}
-
-		if (!/n/i.test(props.docs)) {
+		message: 'Would you like docs included?'
+	}], function (props) {
+		if (props.docs) {
 			this.directory('doc');
 		}
 
@@ -30,7 +26,7 @@ var Generator = module.exports = function () {
 			cwd: this.sourceRoot(),
 			dot: true
 		}).forEach(function (el) {
-			if (/n/i.test(props.docs)) {
+			if (props.docs) {
 				if (ignores.indexOf(el) === -1) {
 					this.copy(el, el);
 				}
