@@ -18,9 +18,9 @@ describe('H5BP generator', function () {
 	});
 
 	it('generates expected files', function (cb) {
-		var expected = ['index.html', 'README.md'];
+		var expected = ['index.html', 'doc'];
 
-		helpers.mockPrompt(this.h5bp, { docs: 'y' });
+		helpers.mockPrompt(this.h5bp, { docs: true });
 
 		this.h5bp.run({}, function () {
 			helpers.assertFiles(expected);
