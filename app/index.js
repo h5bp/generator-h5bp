@@ -3,7 +3,14 @@
 var util = require('util');
 var yeoman = require('yeoman-generator');
 
-var Generator = module.exports = function () {
+var Generator = module.exports = function Generator () {
+	yeoman.generators.Base.apply(this, arguments);
+};
+
+util.inherits(Generator, yeoman.generators.NamedBase);
+
+Generator.prototype.copyFiles = function () {
+
 	var cb = this.async();
 	var ignores = [
 		'.git',
@@ -37,8 +44,7 @@ var Generator = module.exports = function () {
 
 		cb();
 	}.bind(this));
-};
 
-util.inherits(Generator, yeoman.generators.Base);
+};
 
 Generator.name = 'HTML5 Boilerplate';
