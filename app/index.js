@@ -1,5 +1,8 @@
 'use strict';
 
+var util = require('util');
+var yeoman = require('yeoman-generator');
+
 var Generator = module.exports = function () {
 	var cb = this.async();
 	var ignores = [
@@ -35,5 +38,7 @@ var Generator = module.exports = function () {
 		cb();
 	}.bind(this));
 };
+
+util.inherits(Generator, yeoman.generators.Base);
 
 Generator.name = 'HTML5 Boilerplate';
