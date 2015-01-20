@@ -1,12 +1,22 @@
-# HTML5 Boilerplate generator [![Build Status](https://secure.travis-ci.org/h5bp/generator-h5bp.png?branch=master)](http://travis-ci.org/h5bp/generator-h5bp)
+# HTML5 Boilerplate generator [![Build Status](https://travis-ci.org/h5bp/generator-h5bp.png?branch=master)](http://travis-ci.org/h5bp/generator-h5bp)
 
-Scaffolds out [HTML5 Boilerplate](http://html5boilerplate.com)
+> Scaffolds out [HTML5 Boilerplate](http://html5boilerplate.com)
 
 
-## Getting started
+## Install
 
-- Install: `npm install -g generator-h5bp`
-- Run it with [yo](https://github.com/yeoman/yo): `yo h5bp`
+```
+$ npm install --global generator-h5bp
+```
+
+
+## Usage
+
+Run it with [`yo`](https://github.com/yeoman/yo):
+
+```
+$ yo h5bp
+```
 
 
 ## Related
@@ -16,4 +26,4 @@ You might also find the [Mobile Boilerplate](https://github.com/h5bp/generator-m
 
 ## License
 
-MIT License • © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](http://sindresorhus.com)

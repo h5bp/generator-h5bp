@@ -9,7 +9,8 @@ describe('H5BP generator', function () {
 
 		helpers.testDirectory(path.join(__dirname, 'temp'), function (err) {
 			if (err) {
-				return cb(err);
+				cb(err);
+				return;
 			}
 
 			this.h5bp = helpers.createGenerator('h5bp:app', deps);
@@ -20,10 +21,10 @@ describe('H5BP generator', function () {
 	it('generates expected files', function (cb) {
 		var expected = ['index.html', 'doc'];
 
-		helpers.mockPrompt(this.h5bp, { docs: true });
+		helpers.mockPrompt(this.h5bp, {docs: true});
 
 		this.h5bp.run({}, function () {
-			helpers.assertFiles(expected);
+			helpers.assertFile(expected);
 			cb();
 		});
 	});
