@@ -1,6 +1,6 @@
 {
   "name": "generator-h5bp",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "HTML5 Boilerplate generator",
   "keywords": [
     "yeoman-generator",
