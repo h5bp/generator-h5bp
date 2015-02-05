@@ -1,4 +1,4 @@
-/* global describe, beforeEach, it */
+/*global describe, beforeEach, it */
 'use strict';
 var path = require('path');
 var helpers = require('yeoman-generator').test;
@@ -23,7 +23,7 @@ describe('H5BP generator', function () {
 
 		helpers.mockPrompt(this.h5bp, {docs: true});
 
-		this.h5bp.run({}, function () {
+		this.h5bp.run(function () {
 			helpers.assertFile(expected);
 			cb();
 		});

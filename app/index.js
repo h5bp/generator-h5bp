@@ -1,17 +1,12 @@
 'use strict';
+var path = require('path');
 var yeoman = require('yeoman-generator');
 
 module.exports = yeoman.generators.Base.extend({
 	init: function () {
 		var cb = this.async();
 
-		var ignores = [
-			'.git',
-			'CHANGELOG.md',
-			'CONTRIBUTING.md',
-			'LICENSE.md',
-			'README.md'
-		];
+		this.sourceRoot(path.join(__dirname, 'templates', 'dist'));
 
 		this.prompt([{
 			type: 'confirm',
@@ -31,9 +26,7 @@ module.exports = yeoman.generators.Base.extend({
 				cwd: this.sourceRoot(),
 				dot: true
 			}).forEach(function (el) {
-				if (ignores.indexOf(el) === -1) {
-					this.copy(el, el);
-				}
+				this.copy(el);
 			}, this);
 
 			cb();
