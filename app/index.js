@@ -1,8 +1,9 @@
 'use strict';
 var path = require('path');
 var yeoman = require('yeoman-generator');
+var globby = require('globby');
 
-module.exports = yeoman.generators.Base.extend({
+module.exports = yeoman.Base.extend({
 	init: function () {
 		var cb = this.async();
 
@@ -22,11 +23,12 @@ module.exports = yeoman.generators.Base.extend({
 			this.directory('img');
 			this.directory('js');
 
-			this.expandFiles('*', {
+			globby.sync('*', {
 				cwd: this.sourceRoot(),
-				dot: true
-			}).forEach(function (el) {
-				this.copy(el);
+				dot: true,
+				nodir: true
+			}).forEach(function (x) {
+				this.copy(x);
 			}, this);
 
 			cb();
