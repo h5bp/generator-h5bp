@@ -21,7 +21,7 @@ $ yo h5bp
 
 ## Related
 
-You might also find the [Mobile Boilerplate](https://github.com/h5bp/generator-mobile-boilerplate) and [Server Configs](https://github.com/h5bp/generator-server-configs) generators useful.
+You might also find the [Server Configs](https://github.com/h5bp/generator-server-configs) generator useful.
 
 
 ## License
