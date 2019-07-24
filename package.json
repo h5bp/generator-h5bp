@@ -22,7 +22,7 @@
   "dependencies": {
     "globby": "^4.0.0",
     "yeoman-assert": "^2.0.0",
-    "yeoman-generator": "^0.22.2"
+    "yeoman-generator": "^0.23.0"
   },
   "devDependencies": {
     "mocha": "*",
